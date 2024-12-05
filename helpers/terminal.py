@@ -1,7 +1,7 @@
 import os
 import platform
 
-def clear():
+def clear() -> None:
     # if platform.system() is "Windows":
     #     os.system('cls')
     # else:
