@@ -5,31 +5,49 @@ class UserData(TypedDict):
     foodName: str
     callorie: int
 
-def get_userData() -> Optional[UserData]:
+def get_userData() -> Optional[list[UserData]]:
+    userdata: list[UserData] = []
     try:
-        foodName: str = input("Wpisz nazwę jedzenia: ")
-        callorie: int = int(input("Wpisz ile kalori posiada te jedzenie: "))
+        while True:
+            foodName: str = input("\nWpisz nazwę jedzenia: ")
+            callorie: int = int(input("Wpisz ile kalori posiada te jedzenie: "))
         
-        userData: UserData = {
-            "foodName": foodName,
-            "callorie": callorie
-        }
+            userdata.append({
+                "foodName": foodName,
+                "callorie": callorie
+            })
 
-        return userData 
-    except ValueError:
+            cancelAdd = input("Jeżeli chcesz zakończyć dodawanie rzeczy naciśnij 'n', a potem zatwierdz enterem ")
+            if cancelAdd == 'n': break
+        
+        return userdata
+    except (ValueError, TypeError):
         print(f"Dane powinny być w odpowiednim typie ")
-        return None
     except Exception as err:
         print(f"Niespodziewany błąd: {err}")
-        return None
+
+    return None
+
+def sumCalorie(data: list[UserData]) -> int:
+    sum: int = 0
+    for position in data:
+        sum += position['callorie']
+    
+    return sum
+
+def showResult(data: list[UserData]) -> None:
+    terminal.clear()
+    for singeData in data:
+        print(f"- {singeData['foodName']}: {singeData['callorie']} kolorii")
+
+    print(f"-----------------------------")
+    print(f"Zjadłeś dzisiaj {sumCalorie(data)} kolorii")
 
 def main() -> None:
     terminal.clear()
     data = get_userData()
-    if data:
-        print("Dane użytkownika:", data)
-    else:
-        print("Nie udało się uzyskać danych użytkownika.")
+
+    showResult(data) if data else print("Brak danych")
 
 if __name__ == "__main__":
     main()
