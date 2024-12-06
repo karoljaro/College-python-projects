@@ -39,7 +39,7 @@
 
 - [ ] **6.** Gra w wisielca - użytkownik próbuje odgadnąć ukryte słowo, podając kolejne litery. Aplikacja rysuje wisielca w przypadku nieudanych prób.
 
-- [ ] **7.** Program do generowania losowych haseł - aplikacja generuje losowe kombinacje znaków o określonej długości.
+- [X] **7.** Program do generowania losowych haseł - aplikacja generuje losowe kombinacje znaków o określonej długości.
 
 - [ ] **8.** Kalkulator walut - użytkownik podaje kwotę w jednej walucie, a aplikacja przelicza ją na inną przy użyciu aktualnych kursów wymiany.
 
