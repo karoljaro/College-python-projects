@@ -15,7 +15,7 @@ def choice_valid(randomNum: int, guessChoice: int) -> bool:
         print(f"\n\nGratuluje, znalazłeś szukaną liczbę, która wynosi: {randomNum}")
         return True
 
-def main():
+def main() -> None:
     terminal.clear()
     randomNum: int = randint(0, 100)
     trials: int = 0
