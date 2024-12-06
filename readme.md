@@ -29,13 +29,13 @@
 
 - [ ] **1.** Aplikacja do zarządzania listą zakupów - użytkownik może dodawać, usuwać i edytować produkty, a także oznaczać je jako kupione.
 
-- [ ] **2.** Kalkulator BMI - użytkownik podaje wagę i wzrost, a aplikacja oblicza wskaźnik masy ciała.
+- [X] **2.** Kalkulator BMI - użytkownik podaje wagę i wzrost, a aplikacja oblicza wskaźnik masy ciała.
 
-- [ ] **3.** Gra w zgadywanie liczby - komputer losuje liczbę, a użytkownik próbuje ją odgadnąć. Aplikacja informuje, czy podana liczba jest za duża lub za mała.
+- [X] **3.** Gra w zgadywanie liczby - komputer losuje liczbę, a użytkownik próbuje ją odgadnąć. Aplikacja informuje, czy podana liczba jest za duża lub za mała.
 
 - [ ] **4.** Prosty edytor tekstu - aplikacja umożliwia tworzenie, zapisywanie i edycję plików tekstowych.
 
-- [ ] **5.** Licznik kalorii - użytkownik wprowadza spożyte posiłki i ilość spożytych kalorii, a aplikacja sumuje ich wartość.
+- [X] **5.** Licznik kalorii - użytkownik wprowadza spożyte posiłki i ilość spożytych kalorii, a aplikacja sumuje ich wartość.
 
 - [ ] **6.** Gra w wisielca - użytkownik próbuje odgadnąć ukryte słowo, podając kolejne litery. Aplikacja rysuje wisielca w przypadku nieudanych prób.
 
