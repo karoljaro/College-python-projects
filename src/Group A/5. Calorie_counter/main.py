@@ -40,7 +40,7 @@ def showResult(data: list[UserData]) -> None:
     for singeData in data:
         print(f"- {singeData['foodName']}: {singeData['callorie']} kolorii")
 
-    print(f"-----------------------------")
+    terminal.printSeperateLine()
     print(f"Zjadłeś dzisiaj {sumCalorie(data)} kolorii")
 
 def main() -> None:

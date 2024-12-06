@@ -9,4 +9,6 @@ def clear() -> None:
 
     os.system('cls' if platform.system() is "Windows" else 'clear')
 
-   
+
+def printSeperateLine() -> None:
+    print("---------------------------")

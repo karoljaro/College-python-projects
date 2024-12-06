@@ -17,7 +17,7 @@ def interpret_bmi(bmi: float) -> str:
         return "Otyłość"
 
 
-def main():
+def main() -> None:
     try:
         terminal.clear()
         heigth: float = float(input("Wprowadź jaki masz wzrost: "))
