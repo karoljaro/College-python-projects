@@ -27,7 +27,7 @@
 > *Przykładowe projekty aplikacji desktopowych w oparciu o technologie Python.*
 
 
-- [ ] **1.** Aplikacja do zarządzania listą zakupów - użytkownik może dodawać, usuwać i edytować produkty, a także oznaczać je jako kupione.
+- [X] **1.** Aplikacja do zarządzania listą zakupów - użytkownik może dodawać, usuwać i edytować produkty, a także oznaczać je jako kupione.
 
 - [X] **2.** Kalkulator BMI - użytkownik podaje wagę i wzrost, a aplikacja oblicza wskaźnik masy ciała.
 
